@@ -11,3 +11,5 @@ int main()
     }
     return 0;
 }
+//on the other hand do while first the code runs once then 
+// it will check whether the condition is true.
