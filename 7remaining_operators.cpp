@@ -1,7 +1,7 @@
 //bitwise operators
 //& -AND gives true only if both value is true
 //| -OR  gives true when at least one of the conditon is true
-//^ -XOR gives false when both values is same say both are true then it will give false otherwise true
+//^ -XOR gives false when both values are same
 //~ -ones complement gives the opposite of the given values
 //<< -(a<<n)=a*2^n
 //>> -(a>>n)=a/2^n
