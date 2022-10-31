@@ -15,3 +15,4 @@ git rm <file name with extension> - to remove the files from the staging area
 the command git merge <name of the branch you wish to merge>**
 git push -u origin <branch name> - to push branch 
 git remote -v - to get the origin to push files
+git branch - to show all the branches
