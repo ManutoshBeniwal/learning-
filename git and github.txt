@@ -19,6 +19,6 @@ git branch - to show all the branches
 git pull origin <branch name>- to fetch changes from github to local vs studio
 
 
- this is and edit to check  git pull commmand
+ 
  
 
