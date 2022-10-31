@@ -1,0 +1,17 @@
+cd - to open folders 
+mkdr - to make folders
+git init to initialise the folder 
+ls - to get the list of all the files present in the folder
+git status - to get the status of tracked or untracked files
+ls -a - to make .git file
+git add <file name>- to add the file in staging area
+git commit -m(message) "<your message>" - to commit the files in staging area 
+git log - to get the log of changes made in the branch
+git add . - to add all the files in the folder
+git checkout brach name/code - to go back to any log or branch
+git checkout -b <branch name> - to create and open the branch in the same code
+git rm <file name with extension> - to remove the files from the staging area
+** to merge branches checkout the branch in which you wish to add a branch then use 
+the command git merge <name of the branch you wish to merge>**
+git push -u origin <branch name> - to push branch 
+git remote -v - to get the origin to push files
