@@ -1,18 +1,5 @@
 #include <iostream>
-using namespace std;
-int main(){
-    int n;
-    cout<<"value of n"<<endl;
-    cin>>n;
-    for (int row=n;row>=1;row--){
-       for (int col=1;col<=n;col++){
-            if (col<=row){
-                cout<<col<<' ';
-           }     
-        }cout<<endl;
-    }
-   return 0;
-} //both programs do the same thing.
+using namespace std;   
 int main() {
     int z;
     cin>>z;
