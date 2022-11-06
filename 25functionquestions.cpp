@@ -16,14 +16,18 @@ void fib(int upto){
     int a=0;int b=1;int c;
     for (int count=1;count<=upto;count++){
         cout<<a<<"  ";c=a+b;
-        a=b;b=c;
-    }return;
-}
+        a=b;b=c;}return;}
+void factorial(int n){
+    int result=1;
+    for (;n>=1;n--){
+        result*=n;}cout<<result<<endl;
+        return;}
 int main(){
     int a,b;
     cin>>a>>b;
     prime(a,b);
     fib(b);
+    factorial(b);
     return 0;
     
 }
