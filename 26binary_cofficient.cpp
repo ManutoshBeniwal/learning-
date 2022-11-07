@@ -11,5 +11,4 @@ int main(){
     cin>>n>>r;
     answer=factorial(n)/(factorial(r)*factorial(n-r));
     cout<<answer<<endl;
-    return 0;
-}
+    return 0;}
