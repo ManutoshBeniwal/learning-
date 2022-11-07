@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-#include <cmath>
 bool check (int x,int y, int z){
     int answer,a,b,c;a=max(x,max(y,z));
     if (a==x){b=y;c=z;}
@@ -11,5 +10,4 @@ bool check (int x,int y, int z){
 int main(){int a,b,c;cin>>a>>b>>c;
     if (check(a,b,c)){cout<<"pythagorian triplet"<<endl;}
     else {cout<<"not a pythagorian triplet"<<endl;}
-    return 0;
-}
+    return 0;}
