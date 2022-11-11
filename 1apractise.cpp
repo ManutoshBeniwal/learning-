@@ -1,7 +1,9 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 #include <cmath>
 
 int main(){
-    cout<< "this is a  test " <<endl;
+string n="1cf";
+cout<<sizeof(n)<<endl;
+cout<<(n[0])+1<<endl;return 0;
 }
