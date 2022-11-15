@@ -25,8 +25,14 @@ int hexadecimaltodecimal(string n){
             answer+=(n[index]-'A'+10)*pow(16,power);
         }power+=1;}return answer;}   
     
+string decimaltohexadecimal(int n){
+    int base=1;string ans="";
+    while (base<=n){base*=16;}base/=16;
+    while (base>0){int quotient=n/base;n-=base*quotient;base/=16;
+    if(quotient<=9){ans+=to_string(quotient);}
+    else{char c='A'+quotient-10;ans.push_back(c);}}return ans;}
 
-    int main(){\
+    int main(){
     /*
         int n;int x;
         cout<<"type binary digit to convert to decimal--";
@@ -35,7 +41,8 @@ int hexadecimaltodecimal(string n){
         cout<<"type a number to convert into binary--";
         cin>>x;
         cout<<"binary="<<decimaltobinary(x)<<endl;
-*/  string n;cout<<"type the value to convert to decimal"<<endl;
+*/  string n;int z;cout<<"type the value to convert to decimal\n" <<endl;
     cin>>n;cout<<hexadecimaltodecimal(n)<<endl;
+    cin>>z;cout<<decimaltohexadecimal(z)<<endl;
         return 0;
     }
