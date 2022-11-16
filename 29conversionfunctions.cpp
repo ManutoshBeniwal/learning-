@@ -27,7 +27,7 @@ int hexadecimaltodecimal(string n){
     
 string decimaltohexadecimal(int n){
     int base=1;string ans="";
-    while (base<=n){base*=16;}base/=16;
+    while (base<=n){base*=16;}base/=16;//since the loop will make base>n
     while (base>0){int quotient=n/base;n-=base*quotient;base/=16;
     if(quotient<=9){ans+=to_string(quotient);}
     else{char c='A'+quotient-10;ans.push_back(c);}}return ans;}
