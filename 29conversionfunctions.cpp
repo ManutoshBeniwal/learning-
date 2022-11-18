@@ -1,6 +1,10 @@
 #include <bits/stdc++.h>
 #include <math.h>
 using namespace std;
+int reverse_no(int n){
+    int lastdigit,ans;
+        while (n>0){lastdigit=n%10;n/=10;
+        ans=ans*10+lastdigit;}return ans;}
 int binarytodecimal(int n){ //function to convert bi to deci
     int power=0,answer=0,lastdigit;
     while (n>0){
@@ -15,7 +19,8 @@ int decimaltobinary(int n){
     while (quotient>0){
         answer=answer*10+quotient%2;
         quotient/=2;}
-        return answer;}
+        return reverse_no(answer);}
+
 int hexadecimaltodecimal(string n){
     int power=0;int s=n.size();int answer=0;
     for (int index=s-1;index>=0;index--){
