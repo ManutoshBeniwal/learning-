@@ -21,9 +21,17 @@ string decimaltohexadecimal(int n){
     base/=16;if (quotient<=9){ans+=to_string(quotient);}
     else{char c='A'+ quotient-10;ans.push_back(c);}}
     return ans;}
+int hexadecimaltodecimal(string n){int s=n.size(),base=1,ans;
+    for (int index=s-1;index>=0;index--){
+        if (n[index]<='9'){ans+=(n[index]-'0')*base;}
+        else if (n[index]>='A' && n[index]<='F'){
+            ans+=(n[index]-'A'+10)*base;
+        }base*=16;
+    }return ans;}
+
     
 int main(){
-    int n;cin>>n;
-    cout<<decimaltohexadecimal(n)<<endl;
+    string n;cin>>n;
+    cout<<hexadecimaltodecimal(n)<<endl;
 return 0;
 }

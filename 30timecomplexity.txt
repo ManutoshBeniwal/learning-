@@ -1,0 +1,31 @@
+time complexity of an algorithm quantifies the amount of 
+time taken by a program to run as a fuction of length of 
+the input.
+space complexity of a program does not depend upon the input 
+of the primitive datatypes but on the variables in the 
+program
+though it depends upon the input of the datatypes like 
+array as we have to define the size of the array while 
+initialising the array.
+
+time complexity means how many times the main code of a program is running 
+it is of 3 types best case worst caste and avg case 
+rand()- function which returns a random integer.
+
+Big-O Notation
+We define an algorithm’s worst-case time complexity by using the Big-O notation, which determines the set of functions grows slower than or at the same rate as the expression.
+Furthermore, it explains the maximum amount of time an algorithm requires to consider all input values.
+
+
+Omega Notation denoted by ohms sign.
+It defines the best case of an algorithm’s time complexity, the Omega notation defines whether the set of functions will grow faster or at the same rate as the expression.
+Furthermore, it explains the minimum amount of time an algorithm requires to consider all input values.
+
+
+Theta Notation
+It defines the average case of an algorithm’s time complexity, the Theta notation defines when the set of functions lies in both O(expression) and Omega(expression),
+then Theta notation is used. This is how we define a time complexity average case for an algorithm.
+
+
+
+

@@ -23,7 +23,7 @@ int decimaltobinary(int n){
 
 int hexadecimaltodecimal(string n){
     int power=0;int s=n.size();int answer=0;
-    for (int index=s-1;index>=0;index--){
+    for (int index=s-1;index>=0;index--){//since zero indexing 
         if (n[index]>='0' && n[index]<='9'){
             answer+=(n[index]-'0')*pow(16,power);
         }else if(n[index]>='A' && n[index]<='F'){
