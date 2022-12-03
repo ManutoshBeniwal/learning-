@@ -1,16 +1,19 @@
 #include <bits/stdc++.h>
 using namespace std;
 #include <cmath>
-int binary_search(int arr[],int n,int key){
-    int s=0,e=n;
-    while (s<=e){int mid=(s+e)/2;
-    if(key==arr[mid]){return mid;}
-    else if (key<arr[mid]){e=mid-1;}
-    else if (key>arr[mid]){s=mid+1;}}return -1;
-}
+
 int main(){
-    int n;cin>>n;int arr[n];for (int i=0;i<n;i++){
-        cin>>arr[i];}int key;cin>>key;
-        cout<<binary_search(arr,n,key)<<endl;
+    int n; cin>>n;int arr[n];
+    for (int i=0;i<n;i++){cin>>arr[i];}
+    for (int i=1;i<n;i++){
+        int j=i-1;int current=arr[i];
+        while (arr[j]>current && j>=0 ){
+            arr[j+1]=arr[j];
+            j--;
+        }arr[j+1]=current;
+    }
+    for (int i=0;i<n;i++){
+        cout<<arr[i]<<" ";
+    }
 return 0;
 }
