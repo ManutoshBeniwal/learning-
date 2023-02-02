@@ -39,7 +39,7 @@ int lolsubarray(int arr[],int n){//1 2 3 4 8 ans = 4
               if (d1==(arr[i]-arr[i-1])){
                      counter++;
               }else {d1=arr[i]-arr[i-1];
-              ans=max(counter,ans);counter=2;}}return ans;}
+              ans=max(counter,ans);counter=2;}} ans=max(counter,ans);return ans;}
 /*kickstart question - record breaker
 isyana is given the number of visitors at her local theme
 park on N consecutive days.A day is record breaking if it 
@@ -54,7 +54,7 @@ help isyana to find out the number of record breaking days.
 */  
 int no_of_rb_days(int arr[],int n){
        int mx=-1;
-       int ans=0;
+       int ans=1;
        for (int i=0;i<n;i++){
             if (arr[i]>mx && arr[i]>arr[i+1]){
               ans++;}  
