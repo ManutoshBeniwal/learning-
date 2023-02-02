@@ -59,13 +59,31 @@ int no_of_rb_days(int arr[],int n){
             if (arr[i]>mx && arr[i]>arr[i+1]){
               ans++;}  
        mx=max(mx,arr[i]);}return ans;}
- 
-
+/*
+given an array of size N. the task is to find the first 
+repeating element in the array of integers,i.e,an element 
+that occurs more than once and whose index of the first 
+occurrence is smallest. 1<=N<=10^6
+*/ 
+int frei(int arr[],int n){//7
+//1 5 3 4 3 5 6
+       const int N=1e5+2; //10^5 but 10^6 not working 
+       int idx[N];int minidx=INT_MAX;
+       for (int i=0;i<N;i++){idx[i]=-1;}
+       for (int i=0;i<n;i++){
+              if (idx[arr[i]]!=-1){
+                     minidx=min(idx[arr[i]],minidx);
+              }else {idx[arr[i]]=i;}
+       }if (minidx==INT_MAX){return -1;}
+       else {return minidx;}
+}
 int main(){
-       int n;cin>>n;int arr[n];
+        int n;cin>>n;int arr[n];
        for (int i=0;i<n;i++){cin>>arr[i];}
-       //sum_of_subarray(arr,n);
-       // cout<<lolsubarray(arr,n);
-       cout<<no_of_rb_days(arr,n)<<endl;
+       // //sum_of_subarray(arr,n);
+       // // cout<<lolsubarray(arr,n);
+       // cout<<no_of_rb_days(arr,n)<<endl;
+       cout<<frei(arr,n)<<endl;
+
 return 0;
 }
