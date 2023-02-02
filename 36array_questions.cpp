@@ -4,7 +4,7 @@ using namespace std;
 /* subarray - any continous part of an array
 but only in forward direction i.e value of i always increase
 number of subarrays of an array with n elements 
-=nC2+n=n*(n+2)/2
+=nC2+n=n*(n+1)/2
 Subsequence -  it is a sequence that can be derived 
 an array by selecting zero or more elements, without changing
 the order of the remaining elements
@@ -53,12 +53,14 @@ note that the very first day could be a record breaking day!
 help isyana to find out the number of record breaking days.
 */  
 int no_of_rb_days(int arr[],int n){
-       int mx=-1999999;
+       int mx=-1;
        int ans=0;
        for (int i=0;i<n;i++){
             if (arr[i]>mx && arr[i]>arr[i+1]){
               ans++;}  
        mx=max(mx,arr[i]);}return ans;}
+ 
+
 int main(){
        int n;cin>>n;int arr[n];
        for (int i=0;i<n;i++){cin>>arr[i];}
