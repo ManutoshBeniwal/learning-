@@ -75,15 +75,46 @@ int frei(int arr[],int n){//7
                      minidx=min(idx[arr[i]],minidx);
               }else {idx[arr[i]]=i;}
        }if (minidx==INT_MAX){return -1;}
-       else {return minidx;}
+       else {return minidx;}}
+
+/*given an array A of size N of non-negative integers,find
+a continuous subarray which adds to a given number S. 
+constraints :
+1<=N<=10^5
+=<=Ai<=10^10
+
+there will be two methods -
+using nested loops but it will increase the time complexity 
+method two is using two pointer approach by taking a pointer
+st and end .
+*/
+
+void rsm(int arr[],int n,int s){
+       int st=0,e=0,csum=0;
+       while ( st,e<n && csum!=s){
+              if (csum<s){
+                     csum+=arr[e];
+                     e++;
+              }else if (csum>s){
+                     csum-=arr[st];
+                     st++;
+              }
+       }if (csum==s){cout<< st+1<<" "<<e;}
+       else {cout <<"error"<<endl;}
 }
+
+
+
 int main(){
-        int n;cin>>n;int arr[n];
+        int n;cout<<"input size of arr, arr, sum req\n";
+        cin>>n;int arr[n];
+
        for (int i=0;i<n;i++){cin>>arr[i];}
        // //sum_of_subarray(arr,n);
        // // cout<<lolsubarray(arr,n);
        // cout<<no_of_rb_days(arr,n)<<endl;
-       cout<<frei(arr,n)<<endl;
-
+       // cout<<frei(arr,n)<<endl;
+       int s;cin>>s;
+       rsm(arr,n,s);
 return 0;
 }
