@@ -103,7 +103,16 @@ void rsm(int arr[],int n,int s){
        else {cout <<"error"<<endl;}
 }
 
+/*you are given an array of arr[] of N integers including 0
+the task is to find the smallest positive number missing 
+from the array.
 
+1<=N<=10^6
+-10^6<=Ai<=10^6
+
+
+
+*/
 
 int main(){
         int n;cout<<"input size of arr, arr, sum req\n";
