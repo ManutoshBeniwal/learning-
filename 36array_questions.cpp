@@ -110,9 +110,16 @@ from the array.
 1<=N<=10^6
 -10^6<=Ai<=10^6
 
-
-
 */
+
+int misint(int arr[],int n){
+        int const N=1e6+2;bool check[N];
+       for (int i=0;i<N;i++){check[i]=0;}
+       for (int i=0;i<n;i++){if (arr[i]>=0){check[arr[i]]=1;}}
+       for (int i=0;i<N;i++){if (check[i]==0){
+       return i;break;}else if(i==N){return -1;}}
+       return 0;
+}
 
 int main(){
         int n;cout<<"input size of arr, arr, sum req\n";
@@ -123,7 +130,9 @@ int main(){
        // // cout<<lolsubarray(arr,n);
        // cout<<no_of_rb_days(arr,n)<<endl;
        // cout<<frei(arr,n)<<endl;
-       int s;cin>>s;
-       rsm(arr,n,s);
+       // int s;cin>>s;
+       // rsm(arr,n,s);
+       cout<<misint(arr,n)<<endl;
+
 return 0;
 }
