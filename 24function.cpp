@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 void print(int num){
-    cout<<num<<endl;
-    return;}
+    cout<<num<<endl;}
 int add(int a,int b){
     return a+b;
 }
