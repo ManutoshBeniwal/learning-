@@ -23,7 +23,10 @@ cast - convert one datatype to another
 comma(,)- asigns the last value from a list
 & - reference operator returns address of the variable in the memory
 * - pointer operator gives a pointer where a varible is stored in the memory
-bodmas rule of operators is in operators precedence table lec 9*/
+bodmas rule of operators is in operators precedence table lec 9
+in logical and && in multiple && in a statement if first is false then 
+it will not compare the next cause it does'nt matter what the next 
+condition is.*/
 #include <iostream>
 using namespace std;
 int main(){
