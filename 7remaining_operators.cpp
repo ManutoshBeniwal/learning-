@@ -9,6 +9,8 @@
 a+-=b is also a=a+-b same with *+ and /=
 miscellaneous operators
 sizeof()- returns the size of variable
+when used with values as arguments it return float as double and character as ascii int.
+
 ternary operator- condition?x:y returns value of X if condition is true or else value of Y ****
 
 pythagorian triplet means square the biggest number out of 
