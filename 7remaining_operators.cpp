@@ -1,5 +1,6 @@
 /*bitwise operators
-& -AND gives true only if both value is true
+works only on binary digits so convert from decimal to binary first.
+& -AND gives true only if both value is true 
 | -OR  gives true when at least one of the conditon is true
 ^ -XOR gives false when both values are same
 ~ -ones complement gives the opposite of the given values
