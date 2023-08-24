@@ -1,8 +1,7 @@
 #include <stdio.h>
 void main(){
-    int a =2,b=6,c;
-    printf("%d",a++);
-    printf("\n%d", a);
-    c=a&b;
-        printf("\n%d",c);
+    int a =1,b=1,c=6;
+        int k = !!c;
+        printf("\n%d",k);
+
 }
