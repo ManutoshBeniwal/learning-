@@ -7,15 +7,15 @@ void main(){
     if (unit<=50){
         ans=unit;
     }
-    else if(unit>50 && unit <=100){
+    else if( unit <=100){
         ans=(unit-50)*1.5+50;
         
     }
-    else if (unit >100 && unit <=150){
+    else if ( unit <=150){
         ans = (unit-100)*2+50+50*1.5;
         
     }
-    else if (unit >150 && unit <=200 ){
+    else if ( unit <=200 ){
         ans =(unit-150)*2.5+50+50*1.5+50*2;
        
     }
