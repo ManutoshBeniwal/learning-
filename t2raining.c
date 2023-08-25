@@ -16,11 +16,11 @@ void main(){
         scanf("%d",&percentage);
         if (percentage>90){
             printf("grade= A+");
-        }else if(percentage>80 && percentage<=90){
+        }else if(percentage>80 ){
             printf("grade= A");
-        }else if(percentage>70 && percentage<=80){
+        }else if(percentage>70 ){
             printf("grade= B+");
-        }else if (percentage>60 && percentage<=70){
+        }else if (percentage>60 ){
             printf("grade= B");
         }else {
             printf("NAHH!! fail !!! \nn ");
