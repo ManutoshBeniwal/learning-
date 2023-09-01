@@ -9,7 +9,7 @@ using namespace std;
 //     }
 // }
 int a=0,b=1;
-void f(int n){
+void f(int n ){
     if (n>0){cout<<a<<" ";
     int temp=b;
     b+=a;
