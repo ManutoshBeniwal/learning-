@@ -6,8 +6,14 @@ void t(int,int);
 int f(void);
 int u(int,int );
 
+struct st{
+    char name[5];
+    int roll;
+
+};
 
 void main(){
+    struct st d;
     /*
     float unit,ans,bill;
     printf("give the units comsumed over the month\n");
@@ -141,7 +147,15 @@ if (a1<a2){
 //s();
 //t(4,2);
 // printf("%d",f());
-printf("%d",u(2,3));
+//printf("%d",u(2,3));
+
+
+gets(d.name);
+scanf("%d",&d.roll);
+
+puts(d.name);
+printf("%d",d.roll);
+
 }
 
 

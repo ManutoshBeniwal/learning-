@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include <stdlib.h>
 
 
 int su(int ,int );
@@ -41,9 +42,9 @@ void main()
         
         
         
-         int a=10,b=20;
-        swap(&a,&b);
-        printf("%d\n%d",a,b);
+        //  int a=10,b=20;
+        // swap(&a,&b);
+        // printf("%d\n%d",a,b);
 
 
         // int a[5];int *k;
@@ -56,8 +57,16 @@ void main()
 
 
     // printf("%d",s(&a,&b));
-
-
+ 
+    int * p;
+    p=(int *)malloc(16);
+    for(int i=0;i<4;i++){
+        scanf("%d",&p[i]);
+    }
+    for(int i=0;i<4;i++){
+        printf("%d ",*(p+i));
+    }
+free (p);
         
         }
     
